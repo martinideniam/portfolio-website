@@ -1,0 +1,52 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 10vh;
+  overflow: hidden;
+  @include flex(row, center, center);
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  width: 1398px;
+  height: 1077px;
+  left: 50%;
+  top: -50px;
+  z-index: -2;
+}
+
+.hero-content {
+  width: 90%;
+  margin: auto;
+  padding: 10rem 0;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 40rem;
+  padding-right: 2rem;
+  width: 400px;
+  height: 400px;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 10rem;
+  text-align: left;
+}
+
+.self-taught {
+  animation: word 1s infinite alternate-reverse;
+}
+
+.hero-picture {
+  flex: 3 1 60rem;
+}
+
+@keyframes word {
+  from {
+    color: black;
+  }
+  to {
+    color: $text-color;
+  }
+}

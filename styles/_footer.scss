@@ -1,0 +1,29 @@
+footer {
+  background: #65676715;
+}
+
+.footer-div {
+  @include flex(row, center, center);
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+.social-links {
+  @include flex(row, space-between, center);
+}
+
+.footer-logo {
+  flex: 4 1 80rem;
+}
+
+.social-links {
+  flex: 1 1 40rem;
+}
+
+.twitter-icon,
+.instagram-icon,
+.telegram-icon {
+  height: 50px;
+  padding: 1rem 2rem;
+}

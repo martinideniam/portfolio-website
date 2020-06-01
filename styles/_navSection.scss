@@ -1,0 +1,44 @@
+.main-header {
+  box-shadow: 0 5px 10px rgb(93, 93, 93);
+  background: white;
+  position: fixed;
+  min-height: 10vh;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+nav {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  @include flex(row, flex-start, center);
+}
+
+nav {
+  h2 {
+    flex: 1 1 40rem;
+  }
+}
+
+#logo {
+  color: $links-color;
+}
+
+#logo span {
+  color: #b44d4d;
+}
+
+.nav-links {
+  flex: 1 1 40rem;
+  @include flex(row, space-between, center);
+}
+
+.nav-links li {
+  padding: 2rem 3rem;
+}
+
+a {
+  font-size: 3rem;
+}
