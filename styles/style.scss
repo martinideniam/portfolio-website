@@ -104,6 +104,53 @@ $links-color: rgba(0, 0, 0, 80%);
       height: 9rem;
     }
   }
+
+  /* burger menu */
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger span {
+    padding: 0.2rem 2rem;
+    margin: 0.5rem 0rem;
+    background: black;
+    display: block;
+    transition: all 1s ease;
+  }
+
+  .nav-links {
+    background: $text-color;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    @include flex(column, space-evenly, center);
+    transition: transform 1s ease;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 3rem;
+  }
+
+  .nav-open {
+    transform: translate(-100%);
+  }
+
+  .toggle .line1 {
+    transform: rotate(45deg) translate(17%);
+    background: white;
+  }
+  .toggle .line2 {
+    display: none;
+  }
+  .toggle .line3 {
+    transform: rotate(-45deg) translate(17%);
+    background: white;
+  }
 }
 
 @media screen and (max-width: 477px) {

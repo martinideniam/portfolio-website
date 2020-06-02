@@ -587,6 +587,66 @@ footer {
   .contacts .contacts-form input {
     height: 9rem;
   }
+  /* burger menu */
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    margin: 0.5rem 0rem;
+    background: black;
+    display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .nav-links {
+    background: #5e8d97;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+  .nav-links a {
+    color: white;
+    font-size: 3rem;
+  }
+  .nav-open {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  .toggle .line1 {
+    -webkit-transform: rotate(45deg) translate(17%);
+            transform: rotate(45deg) translate(17%);
+    background: white;
+  }
+  .toggle .line2 {
+    display: none;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(-45deg) translate(17%);
+            transform: rotate(-45deg) translate(17%);
+    background: white;
+  }
 }
 
 @media screen and (max-width: 477px) {
